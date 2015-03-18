@@ -14,6 +14,9 @@
       </div>
       <div class="link">
         <div class="btn-group" role="group" aria-label="...">
+          <div class="details">
+            <div>User: <%= @user.name %></div>
+          <button type="button" class="btn btn-default"><a href="/gifs">home</a></button>
           <button type="button" class="btn btn-default"><a href="/gifs/<%= @gif.id %>/edit">edit</a></button>
           <button type="button" class="btn btn-default"><a href="/gifs/<%= @gif.id %>/destroy">delete</a></button>
         </div>
